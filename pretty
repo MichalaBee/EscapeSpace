@@ -1,6 +1,7 @@
-h1 {
-    font-family: Ariel;
+h1{
+    font-family: 'Times New Roman', Times, serif
     color: hotpink;
+    text-align: center;
 }
 
 .google-map {
