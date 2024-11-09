@@ -1,6 +1,6 @@
 h1{
     font-family: Ariel;
-    color: hotpink
+    color: hotpink;
 }
 
 .google-map {
