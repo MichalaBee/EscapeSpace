@@ -13,7 +13,7 @@ Presentation:
 https://prezi.com/view/7bzNkUhL2sVBS0MSuMOn/
 
 Credits:
-Michala Boehm
-Noah Logan
-Mary Scully
+Michala Boehm,
+Noah Logan,
+Mary Scully,
 Dempsey Vogel
