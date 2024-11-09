@@ -20,7 +20,6 @@ h1{
 #light {
     height: 100px;
     width: 200px;
-    left: 5px;
-    top: 10000px;
+    left: 5px;  
     position: absolute;
 }
