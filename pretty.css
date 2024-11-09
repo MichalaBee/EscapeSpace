@@ -4,10 +4,9 @@ h1{
     text-align: center;
 }
 
-#onclick {
-    height: 250px;
-    width: 500px;
-    left: 50px;
-    top: 100px;  
-    position: absolute;
+button {
+    width: 500px; /* Change the width of the button */
+    height: 250px; /* Change the height of the button */
+    font-size: 18px; /* Change the font size of the button text */
+    padding: 10px 20px; /* Adjust padding (vertical and horizontal) */
 }
