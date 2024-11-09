@@ -18,9 +18,9 @@ h1{
 }
 
 #light {
-    height: 50px;
-    width: 25px;
+    height: 100px;
+    width: 200px;
     left: 5px;
-    top: 5px;
+    top: 10000px;
     position: absolute;
 }
