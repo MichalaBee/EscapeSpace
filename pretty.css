@@ -5,8 +5,8 @@ h1{
 }
 
 button {
-    width: 500px; /* Change the width of the button */
-    height: 250px; /* Change the height of the button */
+    width: 50px; /* Change the width of the button */
+    height: 25px; /* Change the height of the button */
     font-size: 18px; /* Change the font size of the button text */
     padding: 10px 20px; /* Adjust padding (vertical and horizontal) */
 }
