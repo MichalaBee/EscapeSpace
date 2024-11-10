@@ -1,4 +1,5 @@
 /* Basic styling for the body */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +9,7 @@ body {
     flex-direction: column; /* Stack h1 and .centered-box vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    height: 100vh; /* Full viewport height */
+    height: 200vh; /* Full viewport height */
     text-align: center; /* Center all text by default */
 }
 
@@ -70,7 +71,12 @@ p {
 }
 
  /* Set the size of the map */
-map {
-    height: 100px;
-    width: 100px;
+#map {
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ccc; /*Light gray border for visibility */
+    width: 500px; /* Fixed width for the centered box */
+    box-shadow: 0 4px 10px rgb(2170, 75, 126, 0.7); /* Soft shadow with reduced opacity */
 }
