@@ -24,3 +24,22 @@ function showPosition(position) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
 }
+
+function getNearestLight() {
+    const nearest = 0
+    for (let i = 1; i < safeSpaceLight.length; i++) {
+        const a1 = safeSpaceLight[nearest][1] - lat;
+        const b1 = safeSpaceLight[nearest][2] - lon;
+        const c1 = sqrt(a1^2 + b1^2);
+        const a2 = safeSpaceLight[i][1] - lat;
+        const b2 = safeSpaceLight[i][2] - lon;
+        const c2 = sqrt(a2^2 + b2^2);
+        if (c2 < c1) {
+            nearest = i;
+        }
+    }
+}
+
+function getNearestSound() {
+
+}
