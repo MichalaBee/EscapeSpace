@@ -57,6 +57,12 @@ function showPosition(position) {
     startlon = position.coords.longitude;
 }
 
+function Scrolldown() {
+    window.scroll(0,225); 
+}
+
+window.onload = Scrolldown;
+
 function getNearestLight() {
     let nearest = 0
     for (let i = 1; i < safeSpaceLight.length; i++) {
@@ -208,4 +214,4 @@ function handleMapUpdate() {
         top: targetY,
         behavior: 'smooth' // Optional for smooth scrolling
     });
-  }
+}
