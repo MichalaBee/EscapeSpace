@@ -25,7 +25,7 @@ h1 {
     background-color: white; /* White background for the box */
     padding: 20px;
     border-radius: 8px;
-    border: 2px solid #ccc; /* Light gray border for visibility */
+    border: 2px solid #ccc; /*Light gray border for visibility */
     width: 300px; /* Fixed width for the centered box */
     box-shadow: 0 4px 10px rgba(2170, 75, 126, 0.7); /* Soft shadow with reduced opacity */
 }
