@@ -79,4 +79,5 @@ p {
     border: 2px solid #ccc; /*Light gray border for visibility */
     width: 500px; /* Fixed width for the centered box */
     box-shadow: 0 4px 10px rgb(2170, 75, 126, 0.7); /* Soft shadow with reduced opacity */
+    margin-bottom: 95px; /* Space between the map and bottom*/
 }
