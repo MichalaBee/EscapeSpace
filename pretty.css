@@ -1,13 +1,69 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(122, 42, 58);
-    text-align: center;
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 25, 52); /* dark purple background */
+    display: flex;
+    flex-direction: column; /* Stack h1 and .centered-box vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center all text by default */
 }
 
-button {
-    width: 100px; /* Change the width of the button */
-    height: 50px; /* Change the height of the button */
-    font-size: 18px; /* Change the font size of the button text */
-    padding: 10px 20px; /* Adjust padding (vertical and horizontal) */
+/* Style for the title h1 */
+h1 {
+    font-family: Arial;
+    font-size: 2rem;
+    color: lightgray; /* light color for the title */
+    margin-bottom: 20px; /* Space between the title and the centered box */
+}
 
+/* Container for the centered content */
+.centered-box {
+    background-color: white; /* White background for the box */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ccc; /* Light gray border for visibility */
+    width: 300px; /* Fixed width for the centered box */
+    box-shadow: 0 4px 10px rgba(2170, 75, 126, 0.7); /* Soft shadow with reduced opacity */
+}
+
+/* Style for the subheading (h2) */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for the subtitle */
+}
+
+/* Style for the buttons */
+button {
+    background-color: rgb(198, 141, 201); /* Light purple background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0; /* Add some space between buttons */
+    width: 100%; /* Make the button full width */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(170, 105, 145); /* Darker purple on hover */
+}
+
+/* Style for the paragraphs */
+p {
+    font-size: 1rem;
+    color: #555; /* Darker gray for regular text */
+}
+
+/* Optional: Style for the location data (demo) */
+#demo {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333; /* Dark color for the location data */
 }

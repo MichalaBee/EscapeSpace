@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Escape Space
-        </title>
-        <link rel="stylesheet" href="pretty.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <h1>
-            Escape Space <!--title of tab--> 
-        </h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Space</title>
+    <link rel="stylesheet" href="pretty.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
 
-        <h2>
-            What are you looking for?
-        </h2>
-        
-        <button onclick="myFunction()"> LIGHT </button>
-        <p> words here </p>
-        <button onclick="myFunction()"> SOUND </button>
-        <p> words here</p>
-        
-        <p id="demo"></p> <!-- get location data-->
+    <h1>Escape Space</h1> <!-- Title above the box -->
 
-        <script>
+    <div class="centered-box">
+        <h2>What are you looking for?</h2>
+
+        <button onclick="myFunction()">LIGHT</button>
+        <p>words here</p>
+
+        <button onclick="myFunction()">SOUND</button>
+        <p>words here</p>
+
+        <p id="demo"></p> <!-- Get location data -->
+    </div>
+
+    <script>
         const x = document.getElementById("demo");
-        getLocation()
-        </script>
+        getLocation(); // Assuming this is a function defined in main.js
+    </script>
 
-    </body>
+</body>
 </html>
