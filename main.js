@@ -114,7 +114,7 @@ function getRoute(start, end) {
     const request = {
         origin: start,
         destination: end,
-        travelMode: google.maps.TravelMode.DRIVING, // You can change to WALKING, BICYCLING, etc.
+        travelMode: google.maps.TravelMode.WALKING, // You can change to WALKING, BICYCLING, etc.
     };
 
     // Calculate and display the route
@@ -135,7 +135,7 @@ function changeRoute() {
     const request = {
       origin: newStart,
       destination: newEnd,
-      travelMode: google.maps.TravelMode.DRIVING
+      travelMode: google.maps.TravelMode.WALKING
     };
 
     directionsService.route(request, (result, status) => {
