@@ -39,48 +39,5 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgWJu6RtaHVQ0QPI-iT2vD-oiJkfuO9mY&callback=initMap" 
     async defer></script>
-
-  <script>
-    let map;
-    let directionsService;
-    let directionsRenderer;
-
-    function initMap() {
-      // Initialize the map centered at an arbitrary location (you can adjust this)
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 37.7749, lng: -122.4194 }, // Default to San Francisco, adjust as needed
-        zoom: 12,
-      });
-
-      // Initialize the DirectionsService and DirectionsRenderer
-      directionsService = new google.maps.DirectionsService();
-      directionsRenderer = new google.maps.DirectionsRenderer();
-      directionsRenderer.setMap(map);
-
-      // Coordinates for the start and destination points (replace these with your own)
-      const start = { lat: 37.7749, lng: -122.4194 }; // San Francisco
-      const end = { lat: 34.0522, lng: -118.2437 };   // Los Angeles
-
-      // Call the function to get directions
-      getRoute(start, end);
-    }
-
-    function getRoute(start, end) {
-      const request = {
-        origin: start,
-        destination: end,
-        travelMode: google.maps.TravelMode.DRIVING, // You can change to WALKING, BICYCLING, etc.
-      };
-
-      // Calculate and display the route
-      directionsService.route(request, function (result, status) {
-        if (status === google.maps.DirectionsStatus.OK) {
-          directionsRenderer.setDirections(result);
-        } else {
-          alert("Directions request failed due to " + status);
-        }
-      });
-    }
-  </script>
 </body>
 </html>
