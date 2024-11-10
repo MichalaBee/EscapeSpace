@@ -69,6 +69,8 @@ p {
     color: #333; /* Dark color for the location data */
 }
 
-initMap{
-    width: 500px;
+ /* Set the size of the map */
+map {
+    height: 100px;
+    width: 100px;
 }
