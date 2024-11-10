@@ -8,25 +8,25 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <img src="Escape_Space_Logo2-removebg-preview.png" alt="Logo">
+    <img src="Escape_Space_Logo-removebg-preview.png" alt="Logo">
 
     <div class="button2">
 
-        <button id= "emergencyID" onclick="emergencyButton()">EMERGENCY</button>
+        <button onclick="emergencyButton()" id="emergencyID">EMERGENCY</button>
 
     </div>
 
     <div class="centered-box">
         <h2>What are you looking for?</h2>
 
-        <button onclick="getNearestLight()">LIGHT</button>
-        <p>words here</p>
+        <button onclick="getNearestLight()">Photosensitivity</button>
+        <p>Select this option if you are currently overstimulated by light</p>
 
-        <button onclick="getNearestSound()">SOUND</button>
-        <p>words here</p>
+        <button onclick="getNearestSound()">Noise Sensitivity</button>
+        <p>Select this option if you are currently overstimulated by noise</p>
 
-        <button onclick="getNearestBoth()">BOTH</button>
-        <p>words here</p>
+        <button onclick="getNearestBoth()">Sensitive to Both</button>
+        <p>Select this option if you are currently overstimulated by both light and noise</p>
 
 
         <p id="demo"></p> <!-- Get location data -->   
