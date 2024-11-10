@@ -107,6 +107,10 @@ function getNearestBoth() {
     changeRoute();
 }
 
+function emergencyButton() {
+    
+}
+
 let map;
 let directionsService;
 let directionsRenderer;
