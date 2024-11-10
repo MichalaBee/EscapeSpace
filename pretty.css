@@ -32,10 +32,6 @@ h1 {
     margin-bottom: 95px; /* Space between the centered box and the map*/
 }
 
-.emergencyButton {
-    background-color: red;
-}
-
 /* Style for the subheading (h2) */
 h2 {
     font-size: 2rem;
@@ -43,8 +39,21 @@ h2 {
     color: #333; /* Dark color for the subtitle */
 }
 
+#emergencyID {
+    background-color: red; /* red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px 0; /* Add some space between buttons */
+    width: 50%; /* Make the button full width */
+    transition: background-color 0.3s ease;
+}
+
 /* Style for the buttons */
-button {
+Button {
     background-color: rgb(198, 141, 201); /* Light purple background */
     color: white;
     border: none;
