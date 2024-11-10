@@ -12,6 +12,7 @@ let lat = 0;
 let lon = 0;
 
 const x = document.getElementById("demo");
+const y = document.getElementById("demo1");
 getLocation(); // Assuming this is a function defined in main.js
 
 function getLocation() {
@@ -43,6 +44,7 @@ function getNearestLight() {
         }
     }
     console.log(safeSpaceLight[nearest][0]);
+    y.innerHTML = safeSpaceLight[nearest][0];
 }
 
 function getNearestSound() {
@@ -59,4 +61,5 @@ function getNearestSound() {
         }
     }
     console.log(safeSpaceSound[nearest][0]);
+    y.innerHTML = safeSpaceSound[nearest][0];
 }
