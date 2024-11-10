@@ -25,6 +25,10 @@ const safeSpaceSound = [
     ["Kinloch Park", 42.71038, -73.66142],
     ["Sage Park", 42.72882, -73.6927]
 ];
+const intersect = [
+    ["Folsom Library", 42.72935, -73.68254],
+    ["Troy Public Library", 42.72801, -73.69213]
+];
 
 let startlat = 37.7749;
 let startlon = -122.4194;
@@ -90,21 +94,22 @@ function getNearestSound() {
 
 function getNearestBoth() {
     var nearest = 0
-    for (let i = 1; i < safeSpaceSound.length; i++) {
-        const a1 = safeSpaceSound[nearest][1] - startlat;
-        const b1 = safeSpaceSound[nearest][2] - startlon;
+    for (let i = 1; i < intersect.length; i++) {
+        const a1 = intersect[nearest][1] - startlat;
+        const b1 = intersect[nearest][2] - startlon;
         const c1 = Math.sqrt(a1^2 + b1^2);
-        const a2 = safeSpaceSound[i][1] - startlat;
-        const b2 = safeSpaceSound[i][2] - startlon;
+        const a2 = intersect[i][1] - startlat;
+        const b2 = intersect[i][2] - startlon;
         const c2 = Math.sqrt(a2^2 + b2^2);
         if (c2 < c1) {
             nearest = i;
         }
     }
-    console.log(safeSpaceSound[nearest][0]);
-    endlat = safeSpaceSound[nearest][1];
-    endlon = safeSpaceSound[nearest][2];
+    console.log(intersect[nearest][0]);
+    endlat = intersect[nearest][1];
+    endlon = intersect[nearest][2];
     changeRoute();
+    handleMapUpdate();
 }
 
 function emergencyButton() {
