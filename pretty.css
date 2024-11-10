@@ -15,9 +15,9 @@ body {
 /* Style for the title h1 */
 h1 {
     font-family: Arial;
-    font-size: 2rem;
+    font-size: 4rem;
     color: lightgray; /* light color for the title */
-    margin-bottom: 20px; /* Space between the title and the centered box */
+    margin-bottom: 95px; /* Space between the title and the centered box */
 }
 
 /* Container for the centered content */
@@ -26,13 +26,13 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     border: 2px solid #ccc; /*Light gray border for visibility */
-    width: 300px; /* Fixed width for the centered box */
-    box-shadow: 0 4px 10px rgba(2170, 75, 126, 0.7); /* Soft shadow with reduced opacity */
+    width: 500px; /* Fixed width for the centered box */
+    box-shadow: 0 4px 10px rgb(2170, 75, 126, 0.7); /* Soft shadow with reduced opacity */
 }
 
 /* Style for the subheading (h2) */
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #333; /* Dark color for the subtitle */
 }
@@ -43,11 +43,11 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 50px;
-    border-radius: 5px;
+    font-size: 25px;
+    border-radius: 50px;
     cursor: pointer;
     margin: 10px 0; /* Add some space between buttons */
-    width: 100%; /* Make the button full width */
+    width: 50%; /* Make the button full width */
     transition: background-color 0.3s ease;
 }
 
