@@ -65,6 +65,7 @@ function getNearestLight() {
     endlat = safeSpaceLight[nearest][1];
     endlon = safeSpaceLight[nearest][2];
     changeRoute();
+    handleMapUpdate();
 }
 
 function getNearestSound() {
@@ -84,6 +85,7 @@ function getNearestSound() {
     endlat = safeSpaceSound[nearest][1];
     endlon = safeSpaceSound[nearest][2];
     changeRoute();
+    handleMapUpdate();
 }
 
 let map;
@@ -144,3 +146,17 @@ function changeRoute() {
       }
     });
   }
+
+function handleMapUpdate() {
+    // Get the coordinates of the map's center
+    const center = map.getCenter();
+
+    // Calculate the target scroll position (adjust as needed)
+    const targetY = document.getElementById('map').offsetTop;
+
+    // Scroll to the target position
+    window.scrollTo({
+        top: targetY,
+        behavior: 'smooth' // Optional for smooth scrolling
+    });
+}
