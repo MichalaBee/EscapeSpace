@@ -32,6 +32,10 @@ h1 {
     margin-bottom: 95px; /* Space between the centered box and the map*/
 }
 
+.emergencyButton {
+    background-color: red;
+}
+
 /* Style for the subheading (h2) */
 h2 {
     font-size: 2rem;
