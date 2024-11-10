@@ -29,6 +29,11 @@ const intersect = [
     ["Folsom Library", 42.72935, -73.68254],
     ["Troy Public Library", 42.72801, -73.69213]
 ];
+const emergency = [
+    ["Samaritan Hospital", 42.73314, -73.67325],
+    ["RPI Department of Public Safety", 42.72925, -73.67702],
+    ["City of Troy Police Department", 42.72998, -73.68704]
+];
 
 let startlat = 37.7749;
 let startlon = -122.4194;
@@ -113,7 +118,23 @@ function getNearestBoth() {
 }
 
 function emergencyButton() {
-    
+    var nearest = 0
+    for (let i = 1; i < emergency.length; i++) {
+        const a1 = emergency[nearest][1] - startlat;
+        const b1 = emergency[nearest][2] - startlon;
+        const c1 = Math.sqrt(a1^2 + b1^2);
+        const a2 = emergency[i][1] - startlat;
+        const b2 = emergency[i][2] - startlon;
+        const c2 = Math.sqrt(a2^2 + b2^2);
+        if (c2 < c1) {
+            nearest = i;
+        }
+    }
+    console.log(emergency[nearest][0]);
+    endlat = emergency[nearest][1];
+    endlon = emergency[nearest][2];
+    changeRoute();
+    handleMapUpdate();
 }
 
 let map;
