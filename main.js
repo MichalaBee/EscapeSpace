@@ -88,6 +88,25 @@ function getNearestSound() {
     handleMapUpdate();
 }
 
+function getNearestBoth() {
+    var nearest = 0
+    for (let i = 1; i < safeSpaceSound.length; i++) {
+        const a1 = safeSpaceSound[nearest][1] - startlat;
+        const b1 = safeSpaceSound[nearest][2] - startlon;
+        const c1 = Math.sqrt(a1^2 + b1^2);
+        const a2 = safeSpaceSound[i][1] - startlat;
+        const b2 = safeSpaceSound[i][2] - startlon;
+        const c2 = Math.sqrt(a2^2 + b2^2);
+        if (c2 < c1) {
+            nearest = i;
+        }
+    }
+    console.log(safeSpaceSound[nearest][0]);
+    endlat = safeSpaceSound[nearest][1];
+    endlon = safeSpaceSound[nearest][2];
+    changeRoute();
+}
+
 let map;
 let directionsService;
 let directionsRenderer;
@@ -145,7 +164,7 @@ function changeRoute() {
         directionsRenderer.setDirections(result);
       }
     });
-  }
+}
 
 function handleMapUpdate() {
     // Get the coordinates of the map's center
@@ -159,4 +178,4 @@ function handleMapUpdate() {
         top: targetY,
         behavior: 'smooth' // Optional for smooth scrolling
     });
-}
+  }
